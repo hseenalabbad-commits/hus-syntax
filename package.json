@@ -1,0 +1,47 @@
+{
+    "name": "hus-language",
+    "displayName": "Hus Language",
+    "description": "Hus Language support for Visual Studio Code",
+    "version": "1.1.5",
+    "publisher": "hseen",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hseenalabbad/hus-syntax.git"
+    },
+
+    "contributes": {
+        "languages": [{
+            "id": "hus",
+            "aliases": ["Hus","hus"],
+            "extensions": [".hus",".husl"],
+            "configuration": "./language-configuration.json"
+        }],
+        
+    "grammars": [{
+        "language": "hus",
+        "scopeName": "source.hus",
+        "path": "./syntax/hus-tmLanguage.json"
+        }],
+
+    "commands": [{
+
+        "command": "hus.runInterpreter",
+        "title": "Run Hus File"
+
+      }],
+    "keybindings": [
+      {
+        "command": "hus.runInterpreter",
+        "key": "shift+x",
+        "when": "editorLangId == hus"
+      }
+    ]
+        
+    }
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsix-vscode/2016">
+  <Metadata>
+    <Identity Language="en-US" Id="hus-language" Version="1.0.0" Publisher="hseen10"/>
+    <DisplayName>Hus Language</DisplayName>
+    <Description>Custom programming language Hus extension for VS Code</Description>
+    <Categories>Programming Languages</Categories>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+  </Assets>
+</PackageManifest>
