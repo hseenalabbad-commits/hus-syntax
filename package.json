@@ -2,7 +2,8 @@
     "name": "hus-language",
     "displayName": "Hus Language",
     "description": "Hus Language support for Visual Studio Code",
-    "version": "1.1.6",
+    "version": "1.1.7",
+    "main": "./extension.js",
     "publisher": "hseen",
     "license": "MIT",
     "engines": {
