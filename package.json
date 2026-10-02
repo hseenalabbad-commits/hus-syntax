@@ -9,12 +9,10 @@
     "engines": {
         "vscode": "^1.80.0"
     },
-
     "repository": {
         "type": "git",
         "url": "https://github.com/hseenalabbad-commits/hus-syntax.git"
     },
-
     "contributes": {
         "languages": [{
             "id": "hus",
@@ -22,27 +20,21 @@
             "extensions": [".hus",".husl"],
             "configuration": "./language-configuration.json"
         }],
-        
-    "grammars": [{
-        "language": "hus",
-        "scopeName": "source.hus",
-        "path": "./syntax/hus-tmLanguage.json"
+        "grammars": [{
+            "language": "hus",
+            "scopeName": "source.hus",
+            "path": "./syntax/hus-tmLanguage.json"
         }],
-
-    "commands": [{
-
-        "command": "hus.runInterpreter",
-        "title": "Run Hus File"
-
-      }],
-    "keybindings": [
-      {
-        "command": "hus.runInterpreter",
-        "key": "shift+x",
-        "when": "editorLangId == hus"
-      }
-    ]
-        
+        "commands": [{
+            "command": "hus.runInterpreter",
+            "title": "Run Hus File"
+        }],
+        "keybindings": [
+          {
+            "command": "hus.runInterpreter",
+            "key": "shift+x",
+            "when": "editorLangId == hus"
+          }
+        ]
     }
-
 }
